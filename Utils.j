@@ -4,5 +4,6 @@
 //! import "SysLib/Utils/Text.j"
 //! import "SysLib/Utils/TimerHash.j"
 //! import "SysLib/Utils/Trigger.j"
-library Utils requires CastDummy,Key,Math,Text,TimerHash,Trigger
+//! import "SysLib/Utils/WorldBounds.j"
+library Utils requires CastDummy,Key,Math,Text,TimerHash,Trigger,WorldBounds
 endlibrary

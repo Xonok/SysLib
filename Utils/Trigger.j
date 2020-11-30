@@ -7,4 +7,10 @@ library Trigger
             set i = i + 1
         endloop
     endfunction
+    public function FastPUE takes playerunitevent pue,code func returns trigger
+        local trigger t = CreateTrigger()
+        call RegisterPlayerUnitEvent(t,pue)
+        call TriggerAddAction(t,func)
+        return t
+    endfunction
 endlibrary
