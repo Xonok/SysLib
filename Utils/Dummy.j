@@ -1,8 +1,6 @@
-library CastDummy
+library Dummy
     globals
-        public integer DummyID = 'h001'
-        public integer StunAbilityID = 'A004'
-        public string StunOrderString = "firebolt"
+        public integer DummyID = 'h000'
         public unit array Dummy
         public integer Dummies = 0
         public player DummyPlayer = Player(PLAYER_NEUTRAL_PASSIVE)
@@ -18,11 +16,5 @@ library CastDummy
     public function Release takes unit u returns nothing
         set Dummies = Dummies + 1
         set Dummy[Dummies] = u
-    endfunction
-    public function Stun takes unit target returns nothing
-        local unit u = Alloc(0,0)
-        call UnitAddAbility(u,StunAbilityID)
-        call IssueTargetOrder(u,StunOrderString,target)
-        call UnitRemoveAbility(u,StunAbilityID)
     endfunction
 endlibrary
