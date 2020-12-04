@@ -8,4 +8,7 @@ library Math
         local real h = 0.001
         return ((Pow(x,h)-1)/h)/((Pow(n,h)-1)/h)
     endfunction
+    public function Angle takes real x, real y, real x2, real y2 returns real
+        return bj_RADTODEG * Atan2(y2 - y, x2 - x)
+    endfunction
 endlibrary
