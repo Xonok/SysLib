@@ -1,7 +1,7 @@
 library Key requires Text
     globals
         public hashtable Table = InitHashtable()
-        public integer InitialOffset = 1000000//So that it would be possible to have tablekeys and objects in the same tables
+        public integer InitialOffset = 2000000//So that it would be possible to have tablekeys and objects in the same tables
         public integer CurrentOffset = InitialOffset
     endglobals
     public function Register takes integer amount returns integer
