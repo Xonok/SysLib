@@ -1,6 +1,7 @@
 library AutoFly initializer i
     private function AutoFly takes nothing returns nothing
-        call UnitAddAbility(GetTriggerUnit(), 'Amrf') and UnitRemoveAbility(GetTriggerUnit(), 'Amrf')
+        call UnitAddAbility(GetTriggerUnit(), 'Amrf')
+	call UnitRemoveAbility(GetTriggerUnit(), 'Amrf')
     endfunction
 
     private function i takes nothing returns nothing
