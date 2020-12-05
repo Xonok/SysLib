@@ -5,6 +5,7 @@
 //! import "SysLib/Utils/Key.j"
 //! import "SysLib/Utils/Logger.j"
 //! import "SysLib/Utils/Math.j"
+//! import "SysLib/Utils/Natives.j"
 //! import "SysLib/Utils/Text.j"
 //! import "SysLib/Utils/TimerHash.j"
 //! import "SysLib/Utils/Trigger.j"
