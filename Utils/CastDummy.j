@@ -5,6 +5,8 @@ library CastDummy
         public string StunOrderString = "firebolt"
 	public integer EnsnareAbilityID = 'A00A'
         public string EnsnareOrderString = "ensnare"
+        public integer SilenceAbilityID = 'A00P'
+        public string SilenceOrderString = "drunkenhaze"
         public unit array Dummy
         public integer Dummies = 0
         public player DummyPlayer = Player(PLAYER_NEUTRAL_PASSIVE)
@@ -34,5 +36,8 @@ library CastDummy
     endfunction
     public function Ensnare takes unit target returns nothing
         call TargetCast(target,EnsnareAbilityID,EnsnareOrderString)
+    endfunction
+    public function Silence takes unit target returns nothing
+        call TargetCast(target,SilenceAbilityID,SilenceOrderString)
     endfunction
 endlibrary
