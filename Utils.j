@@ -7,8 +7,9 @@
 //! import "SysLib/Utils/Math.j"
 //! import "SysLib/Utils/Natives.j"
 //! import "SysLib/Utils/Text.j"
+//! import "SysLib/Utils/Time.j"
 //! import "SysLib/Utils/TimerHash.j"
 //! import "SysLib/Utils/Trigger.j"
 //! import "SysLib/Utils/WorldBounds.j"
-library Utils requires AutoFly,BoundSentinel,CastDummy,Dummy,Key,Logger,Math,Text,TimerHash,Trigger,WorldBounds
+library Utils requires AutoFly,BoundSentinel,CastDummy,Dummy,Key,Logger,Math,Text,Time,TimerHash,Trigger,WorldBounds
 endlibrary
