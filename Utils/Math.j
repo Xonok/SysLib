@@ -14,4 +14,13 @@ library Math
     public function AngleRad takes real x, real y, real x2, real y2 returns real
         return Atan2(y2 - y, x2 - x)
     endfunction
+    public function IntPow takes integer a, integer pow returns integer
+        local integer b = 1
+        loop
+            exitwhen pow == 0
+            set b = b*a
+            set pow = pow - 1
+        endloop
+        return b
+    endfunction
 endlibrary
