@@ -34,7 +34,7 @@ library UnitRemoveCheck initializer in requires Trigger,Text,UnitIndex
     private function act takes nothing returns nothing
         local unit u = GetTriggerUnit()
         local integer uID = GetUnitUserData(u)
-        if Index[uID] == 0 then
+        if Index[uID] == 0 and uID != 0 then
             if H == 0 then
                 set H = 1
                 call TimerStart(Timer,Timeout,true,function handler)
