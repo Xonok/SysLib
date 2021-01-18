@@ -10,6 +10,7 @@ library Index requires Text
         local integer i
         if Recycles > 0 then
             set i = Recycle[Recycles]
+            set Recycles = Recycles - 1
         else
             set MaxUsed = MaxUsed + 1
             set i = MaxUsed
